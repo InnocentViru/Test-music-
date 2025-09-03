@@ -1,0 +1,1 @@
+Instance.new("Sound",workspace);local s=Instance.new("Sound",workspace)s.SoundId="rbxassetid://9118823105"s.Volume=1s:Play()game:GetService("Debris"):AddItem(s,s.TimeLength+1)
