@@ -1,1 +1,15 @@
-Instance.new("Sound",workspace);local s=Instance.new("Sound",workspace)s.SoundId="rbxassetid://9118823105"s.Volume=1s:Play()game:GetService("Debris"):AddItem(s,s.TimeLength+1)
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local head = character:FindFirstChild("Head") -- Or use "UpperTorso"/"Torso" for different rigs
+
+if head then
+    local soundA = Instance.new("Sound")
+    soundA.SoundId = "rbxassetid://1838457617"
+    soundA.Volume = 1
+    soundA.Parent = head
+    soundA:Play()
+    
+end
+
+
+
